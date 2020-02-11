@@ -16,7 +16,7 @@ public class AttackerSpawner : MonoBehaviour
         while(spawn){
 
             float sec = UnityEngine.Random.Range(1f, 5f);
-            
+
             yield return new WaitForSeconds(sec);
 
             Instantiate(attackerPrefab, transform.position, transform.rotation);
